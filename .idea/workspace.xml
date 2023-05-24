@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="58bdee22-0ac6-4d68-982d-df8f1b65ba52" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/jpa-buddy.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+        <option value="Interface" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="2PtJDv896SBlOnefO5QsNU30nGl" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;
+  }
+}</component>
+  <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="conexion" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Application.ClientWindowMain 3">
+    <configuration name="ClientWindowMain 2" type="Application" factoryName="Application">
+      <option name="MAIN_CLASS_NAME" value="cliente.MainWindowClient" />
+      <module name="PersitenciaTransaccional" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="cliente.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ClientWindowMain 3" type="Application" factoryName="Application">
+      <option name="MAIN_CLASS_NAME" value="cliente.MainWindowClient" />
+      <module name="PersitenciaTransaccional" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="cliente.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MainCliente 2" type="Application" factoryName="Application">
+      <option name="ALTERNATIVE_JRE_PATH" value="11" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
+      <option name="MAIN_CLASS_NAME" value="cliente.MainCliente" />
+      <module name="PersitenciaTransaccional" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="conexion.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MainCliente 3" type="Application" factoryName="Application">
+      <option name="ALTERNATIVE_JRE_PATH" value="11" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
+      <option name="MAIN_CLASS_NAME" value="cliente.MainCliente" />
+      <module name="PersitenciaTransaccional" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="conexion.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MainCliente 4" type="Application" factoryName="Application">
+      <option name="ALTERNATIVE_JRE_PATH" value="11" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
+      <option name="MAIN_CLASS_NAME" value="cliente.MainCliente" />
+      <module name="PersitenciaTransaccional" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="conexion.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MainCliente" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="ALTERNATIVE_JRE_PATH" value="11" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
+      <option name="MAIN_CLASS_NAME" value="cliente.MainCliente" />
+      <module name="PersitenciaTransaccional" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="conexion.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MainServer" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="ALTERNATIVE_JRE_PATH" value="11" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
+      <option name="MAIN_CLASS_NAME" value="servidor.MainServer" />
+      <module name="PersitenciaTransaccional" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="servidor.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MainWindowClient" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="cliente.MainWindowClient" />
+      <module name="PersitenciaTransaccional" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="cliente.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MainWindowServer" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="servidor.MainWindowServer" />
+      <module name="PersitenciaTransaccional" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="servidor.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="Application.MainCliente 2" />
+      <item itemvalue="Application.MainCliente 3" />
+      <item itemvalue="Application.MainCliente 4" />
+      <item itemvalue="Application.ClientWindowMain 2" />
+      <item itemvalue="Application.ClientWindowMain 3" />
+      <item itemvalue="Application.MainWindowClient" />
+      <item itemvalue="Application.MainWindowServer" />
+      <item itemvalue="Application.MainCliente" />
+      <item itemvalue="Application.MainServer" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.MainWindowClient" />
+        <item itemvalue="Application.MainWindowServer" />
+        <item itemvalue="Application.MainServer" />
+        <item itemvalue="Application.MainCliente" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="58bdee22-0ac6-4d68-982d-df8f1b65ba52" name="Changes" comment="" />
+      <created>1684270328570</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1684270328570</updated>
+      <workItem from="1684270330113" duration="14758000" />
+      <workItem from="1684362612823" duration="8425000" />
+      <workItem from="1684377136717" duration="7413000" />
+      <workItem from="1684434630407" duration="37543000" />
+      <workItem from="1684525432178" duration="9977000" />
+      <workItem from="1684621596952" duration="23585000" />
+      <workItem from="1684699993089" duration="25998000" />
+      <workItem from="1684802487558" duration="669000" />
+      <workItem from="1684893245750" duration="745000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>
