@@ -1,16 +1,17 @@
 package servidor;
 
-import conexion.Connection;
+import connection.Connection;
 
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.ListIterator;
 
 /**
- * Clase Server para crear servidor de conexión mediante sockets, creando un chat bidireccional con clientes. Permanece
- * en escucha activa a la espera de objetos de la clase Message. Hereda de la clase Connection para establecer una
- * conexión empleando sockets, está a su vés hereda de la clase Thread lo cual permite generar hilos para manejar la
- * concurrencia del programa. Asi mientras la clase principal está atenta a la interfaz, se ejecuta un hilo que está
+ * Clase Server para crear servidor de conexión mediante sockets, creando un chat bidireccional
+ * con clientes. Permanece en escucha activa a la espera de objetos de la clase Message. Hereda
+ * de la clase Connection para establecer una conexión empleando sockets, está a su vés hereda
+ * de la clase Thread lo cual permite generar hilos para manejar la concurrencia del programa.
+ * Asi mientras la clase principal está atenta a la interfaz, se ejecuta un hilo que está
  * atento a los mensajes de los clientes
  * @Author Jorge Luis Velasquez Venegas
  */
@@ -19,7 +20,8 @@ public class Server extends Connection {
     private String messageConsole;
 
     /**
-     * Listado de hilos para conexión de clientes habilitados y conectados al servidor
+     * Listado de hilos para conexión de clientes habilitados y conectados al
+     * servidor
      */
     private ArrayList<ThreadClient> clients;
 
@@ -29,8 +31,9 @@ public class Server extends Connection {
     private static ArrayList listeners;
 
     /**
-     * Constructor de la clase Server para crear servidor de conexión mediante sockets, el servidor permanece en escucha
-     * permanente de las solicitudes de los clientes que se conectan al servidor
+     * Constructor de la clase Server para crear servidor de conexión mediante
+     * sockets, el servidor permanece en escucha permanente de las solicitudes
+     * de los clientes que se conectan al servidor
      * @throws IOException
      */
     public Server() throws IOException {
@@ -41,8 +44,9 @@ public class Server extends Connection {
     }
 
     /**
-     * Constructor de la clase Server para crear servidor de conexión mediante sockets, el servidor permanece en escucha
-     * permanente de las solicitudes de los clientes que se conectan al servidor
+     * Constructor de la clase Server para crear servidor de conexión mediante
+     * sockets, el servidor permanece en escucha permanente de las solicitudes
+     * de los clientes que se conectan al servidor
      * @param port puerto en el que estará escuchando el servidor
      * @throws IOException
      */
@@ -54,9 +58,10 @@ public class Server extends Connection {
     }
 
     /**
-     * Método que se ejecuta al terminar de construir el objeto de la clase Server, el cual da inicio al hilo de
-     * programación concurrente, habilitando la escucha permanente del servidor y creando un nuevo hilo de cliente, cada
-     * vez que se conecta un cliente nuevo
+     * Método que se ejecuta al terminar de construir el objeto de la clase
+     * Server, el cual da inicio al hilo de programación concurrente,
+     * habilitando la escucha permanente del servidor y creando un nuevo
+     * hilo de cliente, cada vez que se conecta un cliente nuevo
      */
     @Override
     public void run() {
@@ -72,12 +77,13 @@ public class Server extends Connection {
 
         } catch (Exception e) {
             System.out.println("Error en run() server: " + e);
-//            System.exit(0);
+            System.exit(0);
         }
     }
 
     /**
-     * Retorna la lista de objetos hilos correspondiente a los clientes conectados al servidor
+     * Retorna la lista de objetos hilos correspondiente a los
+     * clientes conectados al servidor
      * @return
      */
     public ArrayList<ThreadClient> getClients() {
@@ -85,7 +91,8 @@ public class Server extends Connection {
     }
 
     /**
-     * Agrega un objeto hilo de cliente a la lista de clientes conectados al servidor
+     * Agrega un objeto hilo de cliente a la lista de clientes
+     * conectados al servidor
      * @param client objeto de hilo de cliente
      */
     public void addClient(ThreadClient client) {
@@ -93,7 +100,8 @@ public class Server extends Connection {
     }
 
     /**
-     * Elimina un objeto hilo de cliente de la lista de clientes conectados al servidor
+     * Elimina un objeto hilo de cliente de la lista de clientes
+     * conectados al servidor
      * @param client objeto de hilo de cliente
      */
     public void removeClient(ThreadClient client){
@@ -110,7 +118,8 @@ public class Server extends Connection {
 
     /**
      * Establece el valor del mensaje que se debe mostrar en consola
-     * @param messageConsole String con el mensaje que se debe mostrar en consola
+     * @param messageConsole String con el mensaje que se debe mostrar
+     *                       en consola
      */
     public void setMessageConsole(String messageConsole) {
         this.messageConsole = messageConsole;
@@ -126,8 +135,9 @@ public class Server extends Connection {
     }
 
     /**
-     * Método para disparar el evento cuando cambie la variable message que contiene el mensaje que se debe mostrar
-     * en consola
+     * Método para disparar el evento cuando cambie la variable
+     * message que contiene el mensaje que se debe mostrar en
+     * consola
      */
     private void triggerMessageEvent() {
 

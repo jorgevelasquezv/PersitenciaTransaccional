@@ -1,17 +1,18 @@
 package cliente;
 
-import conexion.Connection;
-import conexion.Message;
+import connection.Connection;
+import connection.Message;
 
 import java.io.*;
 import java.util.ArrayList;
 import java.util.ListIterator;
 
 /**
- * Clase Cliente para conexión mediante sockets en chat bidireccional la cual hereda de la clase Connection para
- * establecer una conexión empleando sockets, está a su vés hereda de la clase Thread lo cual permite generar hilos
- * para manejar la concurrencia del programa. Asi mientras la clase principal está atenta a la interfaz se ejecuta un
- * hilo que está atento a los mensajes del servidor
+ * La clase Client permite crear objetos cliente que se conectan mediante sockets con el servidor para entablar el
+ * chat bidireccional. Esta clase hereda de la clase Connection para establecer una conexión empleando sockets, la
+ * clase Connection a su vez hereda de la clase Thread, lo cual permite generar hilos para manejar la concurrencia
+ * del programa. Así mientras la clase principal está atenta a la interfaz, se ejecuta un hilo que se encarga de
+ * enviar y recibir mensajes del servidor
  * @Author Jorge Luis Velasquez Venegas
  */
 public class Client extends Connection {

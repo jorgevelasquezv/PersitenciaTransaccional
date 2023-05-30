@@ -6,6 +6,15 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.io.IOException;
 
+/**
+ * Clase que permite crear la ventana gráfica empleando Javax Swing, Extiende de JFrame para ser usado como contenedor
+ * principal y heredar todos los métodos para implementación de interfaz gráfica.
+ * En esta clase se genera una primera ventana de tipo dialog para establecer la configuración puerto del servidor
+ * socket. Cuando se es aceptada la configuración, se genera una segunda ventana de tipo JFrame en la cual se
+ * visualiza cuando un cliente se conecta o desconecta. El uso de eventos permite la actualización en segundo plano del
+ * TextArea en el que se visualiza cuando un cliente se conecta o desconecta
+ * @Author Jorge Luis Velasquez
+ */
 public class WindowServer extends JFrame {
 
     /**
@@ -34,7 +43,10 @@ public class WindowServer extends JFrame {
     private String messageActual;
 
     /**
-     * Constructor de la clase WindowsServer crea una ventana para visualizar estado de servidor y cerrar conexión
+     * Constructor de la clase WindowServer. Crea los objetos para visualización gráfica de ventana de configuración,
+     * objeto de la clase Server para establecer iniciar el servidor en escucha activa, ventana principal de interacción
+     * de servidor y los eventos necesarios para la actualización en segundo plano de la consola de mensajes enviados y
+     * recibidos, además el evento del mouse al hacer click, se realizan estas acciones a través de métodos
      */
     public WindowServer() {
         super("Cliente de chat bidireccional con sockets");
@@ -47,7 +59,7 @@ public class WindowServer extends JFrame {
     }
 
     /**
-     * Ventana de configuración para la conexión
+     * Método que permite crear la ventana de configuración para la conexión
      */
     private void setUp() {
 
@@ -71,7 +83,9 @@ public class WindowServer extends JFrame {
     }
 
     /**
-     * Método para imprimir datos en consola de servidor
+     * Método para manejar el evento que se genera en el objeto de clase Server cuando se recibe una nueva conexión o
+     * se solicita desconexión y asi actualizar el área multi línea donde se visualizan los mensajes enviados y
+     * recibidos en segundo plano
      */
     private void printDataIntoConsole() {
         EventChangeServerListener messageConsoleListener = new EventChangeServerListener() {
@@ -89,15 +103,15 @@ public class WindowServer extends JFrame {
     }
 
     /**
-     * Método que agrega evento al botón salir para terminar conexión y cerrar programa
+     * Método para manejar el cierre de la ventana al oprimir el botón de cerrar o finalizar
      */
     private void closeConnection() {
         exit.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
                 server.getClients().forEach(ThreadClient::endConnection);
+                System.exit(0);
             }
         });
     }
-
 }

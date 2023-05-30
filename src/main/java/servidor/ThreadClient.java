@@ -1,7 +1,7 @@
 package servidor;
 
 
-import conexion.Message;
+import connection.Message;
 
 import java.io.*;
 import java.net.Socket;
@@ -9,9 +9,10 @@ import java.util.ArrayList;
 import java.util.stream.Collectors;
 
 /**
- * Clase ThreadClient permite crear un nuevo objeto hilo de cliente mediante sockets para establecer la comunicación en
- * el chat bidireccional con clientes conectados al servidor. Hereda de la clase Thread para crear hilo de programación
- * concurrente
+ * Clase ThreadClient permite crear sockets del lado del servidor para cada cliente conectado a este, y de este modo
+ * cada socket creado trabaja en un hilo diferente para escuchar los mensajes enviados por los clientes, y así
+ * establecer la comunicación en el chat bidireccional entre los clientes conectados al servidor. Hereda de la clase
+ * Thread lo cual permite crear hilos habilitando la programación concurrente
  * @Author Jorge Luis Velasquez Venegas
  */
 public class ThreadClient extends Thread {
